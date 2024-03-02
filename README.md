@@ -1,0 +1,31 @@
+# Drugs Care
+
+Une performance poésie * livecoding par [la peanut](https://lapeanut.xyz) réalisée le 29/02/2024 dans le cadre de [Playground](https://plgrnd.cc/3/).
+
+Le texte de la performance est une revisite poétique d'une notice de médicament. Prenez soin du médicament.
+
+Le son est livecodé à partir de samples de la voix récupérés en direct.
+
+La partie visuelle a été préparée en amont, seul l'aspect audio-réactif et le changement de scène sont improvisés.
+
+### Outils utilisés
+
+- [Tidal Cycles](https://tidalcycles.org/) - livecoding sonore
+- [TidalLooper](https://github.com/thgrund/tidal-looper) - sampling de la voix
+- [mi-UGens](https://tidalcycles.org/docs/reference/mi-ugens/) - effets
+- [Hydra](https://hydra.ojack.xyz/) - scènes visuelles
+- [Pulsar](https://pulsar-edit.dev/) - IDE (avec plugins Tidal Cycles et Hydra)
+- [Controller Lab](https://controllerlab.io/) - mapping d'un game controller vers des signaux MIDI
+
+### Aperçu du code
+
+- Code Tidal Cycles : [drugs_care.tidal](drugs_care.tidal)
+- Code Hydra : [drugs_care.hydra.js](drugs_care.hydra.js)
+
+### Aperçu des visuels (sans réactivité audio)
+
+- [Scène 1](https://hydra.ojack.xyz/?code=JTJGJTJGJTIwbGljZW5zZWQlMjB3aXRoJTIwQ0MlMjBCWS1OQy1TQSUyMDQuMCUyMGh0dHBzJTNBJTJGJTJGY3JlYXRpdmVjb21tb25zLm9yZyUyRmxpY2Vuc2VzJTJGYnktbmMtc2ElMkY0LjAlMkYlMEElMkYlMkYlMjBieSUyMGxhJTIwcGVhbnV0JTBBJTBBczAuaW5pdFZpZGVvKCUyMmh0dHBzJTNBJTJGJTJGbGFwZWFudXQueHl6JTJGdiUyRmZsb2NrMS5tcDQlMjIpJTBBczEuaW5pdFNjcmVlbigpJTBBc3JjKHMxKS5tb2R1bGF0ZVNjYWxlKG9zYyg0KSkuYmxlbmQoc3JjKHMwKS5zYXR1cmF0ZSgxMCkuaW52ZXJ0KCkubHVtYSgpLnNjYWxlKCgpJTNEJTNFMC45OSkuZGlmZihzcmMoczApKSkub3V0KCk%3D)
+- [Scène 2](https://hydra.ojack.xyz/?code=JTJGJTJGJTIwbGljZW5zZWQlMjB3aXRoJTIwQ0MlMjBCWS1OQy1TQSUyMDQuMCUyMGh0dHBzJTNBJTJGJTJGY3JlYXRpdmVjb21tb25zLm9yZyUyRmxpY2Vuc2VzJTJGYnktbmMtc2ElMkY0LjAlMkYlMEElMkYlMkYlMjBieSUyMGxhJTIwcGVhbnV0JTBBJTBBczAuaW5pdFZpZGVvKCUyMmh0dHBzJTNBJTJGJTJGbGFwZWFudXQueHl6JTJGdiUyRm5vdGljZS5tcDQlMjIpJTBBc3JjKG8wKS5tb2R1bGF0ZUh1ZShzcmMobzApLnNjYWxlKDEuMDEpJTJDMSkubGF5ZXIoc3JjKHMwKS5jb2xvcmFtYSgoKSUzRCUzRU1hdGguc2luKHRpbWUlMkYyKSowLjE1JTJCMC4wNSkubWFzayhzaGFwZSgyJTJDMC4xNSkuc2NhbGUoNCUyQzEpLnJlcGVhdCgxJTJDNDApLm1vZHVsYXRlUm90YXRlKG9zYyg1KSkuYnJpZ2h0bmVzcygwKSkpLm91dChvMCk%3D)
+- [Scène 3](https://hydra.ojack.xyz/?code=JTJGJTJGJTIwbGljZW5zZWQlMjB3aXRoJTIwQ0MlMjBCWS1OQy1TQSUyMDQuMCUyMGh0dHBzJTNBJTJGJTJGY3JlYXRpdmVjb21tb25zLm9yZyUyRmxpY2Vuc2VzJTJGYnktbmMtc2ElMkY0LjAlMkYlMEElMkYlMkYlMjBieSUyMGxhJTIwcGVhbnV0JTBBJTBBczAuaW5pdFZpZGVvKCUyMmh0dHBzJTNBJTJGJTJGbGFwZWFudXQueHl6JTJGdiUyRmZ1bmFtYnVsZS5tcDQlMjIpJTBBczEuaW5pdFNjcmVlbigpJTBBc3JjKHMwKS5zYXR1cmF0ZSg1KS5kaWZmKHNyYyhzMCkubHVtYSgpLnNhdHVyYXRlKDUpLnNjcm9sbFgoLTAuMDAyJTJDMCkuc2Nyb2xsWSgtMC4wMDIlMkMwKS5zY2FsZSgoKSUzRCUzRU1hdGguc2luKHRpbWUpKjAuMDUlMkIxKSkubWFzayhzaGFwZSgyKS5zY2FsZSgxLjUpLm1vZHVsYXRlU2NhbGUob3NjKDEwKS5ibGVuZChzb2xpZCgxJTJDMSUyQzEpKSkpLmFkZChzcmMoczEpLmJyaWdodG5lc3MoLTAuMikubHVtYSgpLnNjcm9sbFgoLTAuMDA1JTJDJTIwLTAuMDUpLnNjcm9sbFkoLTAuMDA1JTJDKCklM0QlM0UwLjA1KSkub3V0KCk%3D)
+- [Scène 4](https://hydra.ojack.xyz/?code=JTJGJTJGJTIwbGljZW5zZWQlMjB3aXRoJTIwQ0MlMjBCWS1OQy1TQSUyMDQuMCUyMGh0dHBzJTNBJTJGJTJGY3JlYXRpdmVjb21tb25zLm9yZyUyRmxpY2Vuc2VzJTJGYnktbmMtc2ElMkY0LjAlMkYlMEElMkYlMkYlMjBieSUyMGxhJTIwcGVhbnV0JTBBJTBBczAuaW5pdFZpZGVvKCUyMmh0dHBzJTNBJTJGJTJGbGFwZWFudXQueHl6JTJGdiUyRnRyYWluMS5tcDQlMjIpJTBBczEuaW5pdFNjcmVlbigpJTBBc3JjKHMwKS5zYXR1cmF0ZSgxMCkubXVsdChzcmMoczEpLmx1bWEoKS5ibGVuZChncmFkaWVudCgwLjEpKSkuY29udHJhc3QoMS4yKS5sYXllcihzaGFwZSgxMDAlMkMwLjI1JTJDMC41KS5sdW1hKCkuY29sb3IoKCklM0QlM0VNYXRoLnNpbih0aW1lKSUyRjIlMkIwLjUlMkMoKSUzRCUzRU1hdGguc2luKHRpbWUlMkYzKSUyRjIlMkIwLjUlMkMoKSUzRCUzRU1hdGguc2luKHRpbWUlMkY1KSUyRjIlMkIwLjUpLnNjYWxlKDElMkMwLjElMkMxMCkucmVwZWF0KDMwKS5tb2R1bGF0ZVJvdGF0ZShvc2MoMSkubXVsdChzaGFwZSgxMCUyQzEwJTJDMTApKSkubW9kdWxhdGVTY2FsZShvc2MoMC4xJTJDMC4wMDElMkMtMTApLmRpZmYobm9pc2UoMSkpKSkub3V0KCk%3D)
+- [Scène 5](https://hydra.ojack.xyz/?sketch_id=IzVwt2hLFz519SH2)
